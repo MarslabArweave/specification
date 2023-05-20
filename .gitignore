@@ -1,0 +1,12 @@
+node_modules
+logs
+dist
+__tests__/*.json
+/coverage
+.DS_Store
+.secrets
+.idea
+.yalc
+.github
+yarn-error.log
+tmp
