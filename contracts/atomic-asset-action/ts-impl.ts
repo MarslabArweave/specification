@@ -24,7 +24,7 @@ export async function deployAtomicAsset(
             initState: JSON.stringify(initialState),
             src: bundledContractSrc.outputFiles[0].text,
             data
-        })
+        }, true)
         .then((txId) => [initialState, txId]);
 }
 
