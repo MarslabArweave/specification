@@ -1,0 +1,23 @@
+[package]
+name = "atomic_asset"
+version = "0.1.0"
+authors = ["dev@redstone.finance"]
+edition = "2021"
+exclude = ["scripts/*"]
+description = "atomic-asset implementation in rust"
+license = "MIT"
+homepage = "https://academy.warp.cc"
+documentation = "https://academy.warp.cc"
+readme = "README.md"
+repository = "https://github.com/warp-contracts/wrc/tree/master/contracts/atomic-asset-rust"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "=0.2.84"
+wasm-bindgen-futures = "=0.4.34"
+serde-wasm-bindgen = "=0.5.0"
+serde = { version = "1.0", features = ["derive"] }
+js-sys = "0.3.61"
+warp-contracts = { version = "0.1.2" }
